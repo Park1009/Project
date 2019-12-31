@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style>
+    .header {
+      background-color:#333333;
+    }
+    .container {
+      width:30%px;
+      margin:0 auto;
+    }
+    .nav {
+      margin:0;
+      padding:20px;
+    }
+    .nav li {
+      display:inline;
+    }
+    .nav li a {
+      color:#ffffff;
+      text-decoration:none;
+      padding:20px 10px;
+      font-family:'Raleway', sans-serif;
+      text-transform:uppercase;
+      font-size:1rem;
+    }
+    body{
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    body:before{
+      content:'';
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      z-index: -1;
+      background-image:url(school1.jpg);
+      filter: blur(4px);
+    }
+    html {
+      margin: 0;
+      font-family: 'Muli', sans-serif;
+      font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    body {
+      margin: 0;
+      font-size: 1.15rem;
+      line-height: 1.4em;
+    }
+    #container {
+      background-color: #FFF;
+      margin: 80px 10%;
+      padding: 30px 60px;
+      border-radius: 20px;
+      box-shadow: 0 3px 26px 0 rgba(0,0,0,0.20);
+    }
+
+    main,header {
+      box-sizing: border-box;
+    }
+
+    main{
+      background-color: #f7f7f7;
+      padding: 20px;
+      border-radius: 10px;
+      color: #6b6b6b;
+      margin: 40px 0;
+    }
+    ul ul{
+      display:none;
+    }
+
+    #menuBtn1:checked ~ .submenu1 {
+    display: block;
+    }
+    #menuBtn2:checked ~ .submenu2 {
+    display: block;
+    }
+    #menuBtn3:checked ~ .submenu3 {
+    display: block;
+    }
+    #menuBtn4:checked ~ .submenu4{
+    display: block;
+    }
+    #menuBtn5:checked ~ .submenu5{
+    display: block;
+    }
+    input {
+        position: fixed;
+        left: -9999px;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <ul class="nav">
+          <li><a href="index.html"> home </a></li>
+          <li><a href="Accounting.html"> accounting </a></li>
+          <li><a href="Smart.html"> smart </a></li>
+          <li><a href="Management.html"> management </a></li>
+          <li><a href="Culinary.html"> culinary arts </a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="container">
+      <header>
+	      <h1>관광경영과</h1>
+		    <p>소개글</p>
+      </header>
+      <main>
+	    <ul>
+        <li>
+        <input type="checkbox" id="menuBtn1">
+        <label for="menuBtn1" class="labelBtn" onclick="">교육내용</label>
+          <ul class="submenu1">
+            <li>국제매너</li>
+            <li>관광외식조리</li>
+            <li>문화관광</li>
+            <li>관광이벤트 일반</li>
+            <li>관광영어</li>
+          </ul>
+        </li>
+        <li>
+        <input type="checkbox" id="menuBtn2">
+        <label for="menuBtn2" class="labelBtn" onclick="">취업</label>
+          <ul class="submenu2">
+            <li>관광호텔</li>
+            <li>여행사</li>
+            <li>항공사</li>
+            <li>외식업체</li>
+            <li>관광통역안내사</li>
+          </ul>
+        </li>
+        <li>
+        <input type="checkbox" id="menuBtn3">
+        <label for="menuBtn3" class="labelBtn" onclick="">진학</label>
+          <ul class="submenu3">
+            <li>관광관련학과</li>
+            <li>항공서비스과</li>
+            <li>호텔경영학과</li>
+            <li>호텔조리과</li>
+            <li>관광영어과</li>
+          </ul>
+        </li>
+        <li>
+          <input type="checkbox" id="menuBtn4">
+          <label for="menuBtn4" class="labelBtn" onclick="">취득가능 자격증</label>
+            <ul class="submenu4">
+            <li>국외여행인솔자</li>
+            <li>국내여행안내사</li>
+            <li>호텔 서비스사</li>
+            <li>커피 바리스타</li>
+            <li>항공예약발권자격증</li>
+          </ul>
+        </li>
+        <li>
+          <input type="checkbox" id="menuBtn5">
+          <label for="menuBtn5" class="labelBtn" onclick="">과동아리</label>
+            <ul class="submenu5">
+            <li>H2M</li>
+            <li>쇼콜라티에</li>
+            <li>위드플라잉</li>
+            <li>라따뚜이</li>
+          </ul>
+        </li>
+      </ul>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style>
+
+    .header {
+      background-color:#333333;
+    }
+    .container {
+      width:30%px;
+      margin:0 auto;
+    }
+    .nav {
+      margin:0;
+      padding:20px;
+    }
+    .nav li {
+      display:inline;
+    }
+    .nav li a {
+      color:#ffffff;
+      text-decoration:none;
+      padding:20px 10px;
+      font-family:'Raleway', sans-serif;
+      text-transform:uppercase;
+      font-size:1rem;
+    }
+    body{
+        background: linear-gradient(#B721FF, #2AF598, #fec051, #FEE140, #FA709A);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    body:before{
+      content:'';
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      z-index: -1;
+      background-image:url(school1.jpg);
+      filter: blur(4px);
+    }
+    html {
+      margin: 0;
+      font-family: 'Muli', sans-serif;
+      font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    body {
+      margin: 0;
+      font-size: 1.15rem;
+      line-height: 1.4em;
+    }
+    #container {
+      background-color: #FFF;
+      margin: 80px 10%;
+      padding: 30px 60px;
+      border-radius: 20px;
+      box-shadow: 0 3px 26px 0 rgba(0,0,0,0.20);
+    }
+
+    main,header {
+      box-sizing: border-box;
+    }
+
+    main{
+      background-color: #f7f7f7;
+      padding: 20px;
+      border-radius: 10px;
+      color: #6b6b6b;
+      margin: 40px 0;
+    }
+    ul ul{
+      display:none;
+    }
+
+    #menuBtn1:checked ~ .submenu1 {
+    display: block;
+    }
+    #menuBtn2:checked ~ .submenu2 {
+    display: block;
+    }
+    #menuBtn3:checked ~ .submenu3 {
+    display: block;
+    }
+    #menuBtn4:checked ~ .submenu4{
+    display: block;
+    }
+    #menuBtn5:checked ~ .submenu5{
+    display: block;
+    }
+    input {
+        position: fixed;
+        left: -9999px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <ul class="nav">
+          <li><a href="index.html"> home </a></li>
+          <li><a href="Accounting.html"> accounting </a></li>
+          <li><a href="Smart.html"> smart </a></li>
+          <li><a href="Management.html"> management </a></li>
+          <li><a href="Culinary.html"> culinary arts </a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="container">
+      <header>
+	      <h1>외식 조리과</h1>
+		    <p>소개글</p>
+      </header>
+      <main>
+	    <ul>
+        <li>
+        <input type="checkbox" id="menuBtn1">
+        <label for="menuBtn1" class="labelBtn" onclick="">교육내용</label>
+          <ul class="submenu1">
+            <li>식품위생</li>
+            <li>식품과 영양</li>
+            <li>한국조리</li>
+            <li>서양조리</li>
+            <li>관광영어</li>
+            <li>회계원리</li>
+            <li>창업일반</li>
+            <li>사무관리 </li>
+          </ul>
+        </li>
+        <li>
+          <input type="checkbox" id="menuBtn2">
+          <label for="menuBtn2" class="labelBtn" onclick="">취업</label>
+            <ul class="submenu2">
+            <li>외식업체 창업</li>
+            <li>식품유통업계</li>
+            <li>한식당</li>
+            <li>양식당</li>
+            <li>일식당</li>
+            <li>중식당</li>
+            <li>뷔페</li>
+            <li>외식산업체 </li>
+          </ul>
+        </li>
+        <li>
+        <input type="checkbox" id="menuBtn3">
+        <label for="menuBtn3" class="labelBtn" onclick="">진학</label>
+          <ul class="submenu3">
+              <li>외식산업과</li>
+              <li>외식조리과</li>
+              <li>식품영양과</li>
+              <li>호텔조리과 </li>
+          </ul>
+        </li>
+        <li>
+          <input type="checkbox" id="menuBtn4">
+          <label for="menuBtn4" class="labelBtn" onclick="">취득가능 자격증</label>
+            <ul class="submenu4">
+            <li>한식기능사</li>
+            <li>양식기능사</li>
+            <li>중식기능사</li>
+            <li>일식기능사</li>
+            <li>푸드스타일리스트</li>
+            <li>출장요리 연회사</li>
+            <li>전산회계</li>
+            <li>컴퓨터활용능력</li>
+            <li>워드프로세서</li>
+          </ul>
+        </li>
+        <li>
+          <input type="checkbox" id="menuBtn5">
+          <label for="menuBtn5" class="labelBtn" onclick="">과동아리</label>
+            <ul class="submenu5">
+            <li>샤르망</li>
+          </ul>
+        </li>
+      </ul>
+      </main>
+    </div>
+  </body>
+</html>
